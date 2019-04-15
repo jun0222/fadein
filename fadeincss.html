@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <p>こっちはフェードインしません</p>
+    <p class="fadein">こっちだけフェードインします</p>
+  </body>
+</html>
+
+<style>
+
+.fadein{
+  animation: fadeIn 1000s ease 0s 1 normal;
+  }
+
+.fadein:hover {
+  -webkit-animation: fadeIn 12s ease 0s 1 normal;
+  }
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+    }
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+    }
+</style>
